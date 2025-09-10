@@ -27,10 +27,15 @@ import pprint
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
+from pathlib import Path
 
 #Initialize variables
 stocktickers = {'MSFT','AAPL','TSLA','DKNG','RBRK'}
 stocktickerdata = {}
+#Initialize project root and charts output directory
+project_root = Path().resolve()
+output_directory = project_root / "charts"
+output_directory.mkdir(parents=True, exist_ok=True)
 
 #Loop through stocks in stocktickers array
 for stock in stocktickers:
@@ -67,3 +72,7 @@ for stock in stocktickers:
     plt.xlabel('Last 10 Days of Trading')
     plt.ylabel('Closing Price')
     plt.show()
+
+    #Save chart
+    outfile = output_directory / f"{stockname}.png"
+    plt.savefig(outfile)
