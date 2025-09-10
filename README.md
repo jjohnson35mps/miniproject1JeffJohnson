@@ -16,11 +16,11 @@ The program pulls financial data from the yfinance API, processes arrays using N
 ### Dependencies
  
 - Python 3.13.7
-Operating System: 
+- Operating System: 
     - Windows
     - macOS
     - Linux
-Required libraries (install with pip):
+- Required libraries (install with pip):
     - pip install numpy
     - pip install matplotlib
     - pip install yfinance
@@ -42,7 +42,7 @@ python main.py
 ## Help
  
 If you encounter issues with missing modules, re-run pip installs:
-    - pip install -r requirements.txt
+- pip install -r requirements.txt
 
  
 ## Authors
