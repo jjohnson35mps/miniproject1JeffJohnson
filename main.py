@@ -42,8 +42,6 @@ shutil.rmtree(output_directory)
 #Create output directory
 output_directory.mkdir(parents=True, exist_ok=True)
 
-
-
 #Loop through stocks in stocktickers array
 for stock in stocktickers:
     #assign variable for stock name for graph titles
