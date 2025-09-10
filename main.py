@@ -44,7 +44,7 @@ output_directory.mkdir(parents=True, exist_ok=True)
 
 #Loop through stocks in stocktickers array
 for stock in stocktickers:
-    #assign variable for stock name for graph titles
+    #Assign variable for stock name for graph titles
     stockname = stock
     #print(stockname)
 
@@ -66,15 +66,21 @@ for stock in stocktickers:
 
     #Initialize listtosort list for gathering min and max
     listtosort = copy.copy(stockArray)
+    #Sort list
     listtosort.sort()
     #print(listtosort)
 
-    #Plot data to a graph
+    #Plot stockArray data to a graph
     plt.plot(stockArray)
+    #Add title to chart
     plt.title(stockname)
+    #Set X and Y axes. Add padding to Y axis
     plt.axis((0, 10, listtosort.min()-5, listtosort.max()+5))
+    #Set X axis number increments of 1
     plt.xticks(np.arange(0, 11, 1))
+    #Add label to X axis
     plt.xlabel('Last 10 Days of Trading')
+    #Add label to Y axis
     plt.ylabel('Closing Price')
 
     #Save chart
