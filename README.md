@@ -15,12 +15,15 @@ The program pulls financial data from the yfinance API, processes arrays using N
  
 ### Dependencies
  
-Python 3.13.7
-Operating System: Windows, macOS, or Linux
+- Python 3.13.7
+Operating System: 
+    - Windows
+    - macOS
+    - Linux
 Required libraries (install with pip):
-    pip install numpy
-    pip install matplotlib
-    pip install yfinance
+    - pip install numpy
+    - pip install matplotlib
+    - pip install yfinance
  
 ### Installing
  
@@ -39,7 +42,7 @@ python main.py
 ## Help
  
 If you encounter issues with missing modules, re-run pip installs:
-    pip install -r requirements.txt
+    - pip install -r requirements.txt
 
  
 ## Authors
@@ -48,8 +51,8 @@ Jeff Johnson
  
 ## Version History
  
-* 0.1
-    * Initial Release
+- 0.1
+  - Initial Release
  
 ## License
  
@@ -58,8 +61,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Acknowledgments
  
 Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- [awesome-readme](https://github.com/matiassingers/awesome-readme)
+- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+- [dbader](https://github.com/dbader/readme-template)
+- [zenorocha](https://gist.github.com/zenorocha/4526327)
+- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
