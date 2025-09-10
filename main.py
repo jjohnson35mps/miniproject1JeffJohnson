@@ -48,7 +48,7 @@ for stock in stocktickers:
     plt.plot(stock)
     plt.title(stockname)
     plt.axis((0, 10, listtosort.min()-5, listtosort.max()+5))
-    plt.axis()
+    plt.xticks(np.arange(0, 11, 1))
     plt.xlabel('Last 10 Days of Trading')
     plt.ylabel('Closing Price')
     plt.show()
