@@ -9,54 +9,51 @@ Queries last 10 days of stock information for Apple, Draft King, Microsoft, Rubr
  
 ## Description
  
-An in-depth paragraph about your project and overview of use.
+The program pulls financial data from the yfinance API, processes arrays using NumPy, and plots charts with matplotlib. Each stock closing price for Apple, DraftKings, Microsoft, Rubrik, and Tesla are collected and scaled based on minimum and maximum values and plotted on a graph with X and Y axis labels and a title. The program ensures that a charts directory exists before saving the charts as .png files.
  
 ## Getting Started
  
 ### Dependencies
  
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-* List pip install instructions.
+Python 3.13.7
+Operating System: Windows, macOS, or Linux
+Required libraries (install with pip):
+    pip install numpy
+    pip install matplotlib
+    pip install yfinance
  
 ### Installing
  
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+1. Clone or download this project to your local machine.
+2. Ensure you have the required dependencies listed above installed.
+3. Running main.py will automatically create the charts folder if it doesn’t already exist.
  
 ### Executing program
  
-* How to run the program
-* Step-by-step bullets
+1. Navigate to the project directory.
+2. Run the Python script:
 ```
-code blocks for commands
+python main.py
 ```
  
 ## Help
  
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+If you encounter issues with missing modules, re-run pip installs:
+    pip install -r requirements.txt
+
  
 ## Authors
  
-Contributors names and contact info
- 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Jeff Johnson
  
 ## Version History
  
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
  
 ## License
  
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
  
 ## Acknowledgments
  
