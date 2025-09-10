@@ -3,9 +3,9 @@
 ### Mini Project 1
  
  
-# Project Title
+# Mini Project 1
  
-Simple overview of use/purpose.
+Queries last 10 days of stock information for Apple, Draft King, Microsoft, Rubrik, and Tesla. It then creates graphs for each stock, plots the 10 stock prices over each day, and saves the charts to a folder called 'charts'.
  
 ## Description
  
