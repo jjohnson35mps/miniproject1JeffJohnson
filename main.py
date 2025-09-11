@@ -94,3 +94,5 @@ for stock in stocktickers:
 
     #Show chart
     plt.show()
+
+print("Progam will now exit...")
