@@ -38,10 +38,12 @@ stocktickerdata = {}
 project_root = Path().resolve()
 output_directory = project_root / "charts"
 
-if output_directory.exists():
+if not output_directory.exists():
+    #Create output directory
+    output_directory.mkdir(parents=True, exist_ok=True)
+else:
     #Remove output directory
     shutil.rmtree(output_directory)
-    time.sleep(2)
     #Create output directory
     output_directory.mkdir(parents=True, exist_ok=True)
 
