@@ -27,7 +27,6 @@ pip install matplotlib
 pip install yfinance
 ```
 
- 
 ## Installing
  
 1. Clone or download this project to your local machine.
