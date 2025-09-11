@@ -29,6 +29,7 @@ import matplotlib.pyplot as plt
 import copy
 from pathlib import Path
 import shutil
+import time
 
 #Initialize variables
 stocktickers = {'MSFT','AAPL','TSLA','DKNG','RBRK'}
@@ -40,6 +41,7 @@ output_directory = project_root / "charts"
 if output_directory.exists():
     #Remove output directory
     shutil.rmtree(output_directory)
+    time.sleep(2)
     #Create output directory
     output_directory.mkdir(parents=True, exist_ok=True)
 
