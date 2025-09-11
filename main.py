@@ -37,10 +37,11 @@ stocktickerdata = {}
 project_root = Path().resolve()
 output_directory = project_root / "charts"
 
-#Remove output directory
-shutil.rmtree(output_directory)
-#Create output directory
-output_directory.mkdir(parents=True, exist_ok=True)
+if output_directory.exists():
+    #Remove output directory
+    shutil.rmtree(output_directory)
+    #Create output directory
+    output_directory.mkdir(parents=True, exist_ok=True)
 
 #Loop through stocks in stocktickers array
 for stock in stocktickers:
@@ -88,4 +89,4 @@ for stock in stocktickers:
     plt.savefig(outfile)
 
     #Show chart
-    #plt.show()
+    plt.show()
